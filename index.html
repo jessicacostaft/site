@@ -24,7 +24,8 @@
     <section id="sobre-mim">
         <h2>Sobre Mim</h2>
         <img src="retrato-de-solo-adoravel-cachorro-beagle_53876-64817.avif"
-            alt="Imagem de foto de perfil de um cachorro beagle" width="100" height="100" title="Imagem de Perfil de Jéssica">
+            alt="Imagem de foto de perfil de um cachorro beagle" width="100" height="100"
+            title="Imagem de Perfil de Jéssica">
 
         <article>
 
@@ -62,11 +63,32 @@
         <section>
             <h2>Contato</h2>
             <p>Tem um projeto em mente? Entre em contato comigo!</p>
+            <form action="">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required> <br>
 
-            <address>
-                E-mail: <a href="mailto:joao@example.com">joao@example.com</a> <br>
-                Telefone: <a href="tel:+5511999999999">(11) 99999-9999</a>
-            </address>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required> <br>
+
+                <label for="telefone">Telefone:
+                    <input type="tel" id="telefone" name="telefone" required> <br>
+                </label>
+
+                <label for="assunto">Assunto:</label>
+                <select name="assunto" id="assunto">
+                    <option value="orcamento">Orçamento</option>
+                    <option value="duvida">Dúvida</option>
+                    <option value="outro">Outro</option>
+                </select>
+                <br>
+                 <label for="mensagem">Mensagem:</label>   
+                <textarea name="mensagem" id="mensagem" cols="20" rows="5"></textarea>
+                <br>
+                <input type="checkbox" id="inscricao" name="inscricao">
+                <label for="inscricao">Quero receber novidades por email</label>
+                <br>
+                <input type="submit" value="Enviar Mensagem">
+            </form>
         </section>
     </footer>
 </body>
